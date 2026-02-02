@@ -16,5 +16,5 @@
 #     artifact-name: corne_left_with_studio
 #
 include:
-   - board: nice_nano_v2
+   - board: ble_micro_pro 
      shield: misogi
