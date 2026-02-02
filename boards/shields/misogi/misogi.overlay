@@ -26,25 +26,24 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios
-            = <&gpio0 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pro Micro 5
+            , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pro Micro 6
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pro Micro 7
+            , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pro Micro 8
+            , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Pro Micro 9
             ;
 
         col-gpios
-            = <&gpio0 20 GPIO_ACTIVE_HIGH>
-            , <&gpio0 19 GPIO_ACTIVE_HIGH>
-            , <&gpio0 18 GPIO_ACTIVE_HIGH>
-            , <&gpio0 17 GPIO_ACTIVE_HIGH>
-            , <&gpio0 16 GPIO_ACTIVE_HIGH>
-            , <&gpio0 15 GPIO_ACTIVE_HIGH>
-            , <&gpio0 14 GPIO_ACTIVE_HIGH>
+            = <&gpio0 2  GPIO_ACTIVE_HIGH> // Pro Micro 20
+            , <&gpio0 3  GPIO_ACTIVE_HIGH> // Pro Micro 19
+            , <&gpio0 28 GPIO_ACTIVE_HIGH> // Pro Micro 18
+            , <&gpio0 29 GPIO_ACTIVE_HIGH> // Pro Micro 17
+            , <&gpio0 30 GPIO_ACTIVE_HIGH> // Pro Micro 16
+            , <&gpio0 31 GPIO_ACTIVE_HIGH> // Pro Micro 15
+            , <&gpio0 5  GPIO_ACTIVE_HIGH> // Pro Micro 14
             ;
     };
 };
